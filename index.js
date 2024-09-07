@@ -35,3 +35,20 @@ var swiper = new Swiper(".ReviewSlide", {
     disableOnImteraction: false,
   },
 });
+
+function whatsapp(){
+  var name=document.getElementById("name").value;
+  var email=document.getElementById("email").value;
+  var number=document.getElementById("number").value;
+  var occasion=document.getElementById("occasion").value;
+  var message=document.getElementById("message").value;
+
+  var whatsappurl="https://wa.me/917411830385?text="
+  +"Name:"+name+"%0a"
+  +"Email:"+email+"%0a"
+  +"Number:"+number+"%0a"
+  +"Occasion:"+occasion+"%0a"
+  +"Message:"+message+"%0a"
+
+  window.open(whatsappurl,"_blank").focus();
+}
