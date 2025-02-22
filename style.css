@@ -127,6 +127,9 @@ section {
   font-size: 4rem;
   text-transform: uppercase;
 }
+.home .content .image {
+  display: none;
+}
 .home .content p {
   font-weight: lighter;
   font-size: 2rem;
@@ -519,6 +522,19 @@ footer p.separator {
   }
   .gallery .boxContainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .home .content .text {
+    display: none; /* Hide text when screen size is greater than 768px */
+  }
+  .home .content .image {
+    display: block; /* Show image when screen size is greater than 768px */
+  }
+  .home .content .image img {
+    height: 6rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    transform: scale(2.5);
+    clip-path: inset(36% 0 20% 0);
   }
 }
 
